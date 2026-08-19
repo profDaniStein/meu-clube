@@ -1,11 +1,355 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oportuni</title>
-</head>
-<body>
-    
-</body>
-</html>
+<!DOCTYPE html> 
+
+<html lang="pt-BR"> 
+
+<head> 
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Oportuni — As melhores oportunidades perto de você</title> 
+
+</head> 
+
+<body> 
+
+    <!-- CABEÇALHO: logo + navegação --> 
+
+    <header> 
+
+        <img src="img/logo.png" alt="Logo do Oportuni" width="200"> 
+
+        <h1>Oportuni</h1> 
+
+        <p>As melhores oportunidades perto de você</p> 
+
+        <nav> 
+
+            <!-- menu vai aqui --> 
+
+            <a href="#inicio">Início</a> 
+
+            <a href="#como-funciona">Como funciona</a> 
+
+            <a href="#categorias">Categorias</a> 
+
+            <a href="#depoimentos">Depoimentos</a> 
+
+            <a href="#contato">Contato</a> 
+
+     
+
+        </nav> 
+
+    </header> 
+
+        <!-- CONTEÚDO PRINCIPAL --> 
+
+    <main> 
+
+        <!-- Seção 1: chamada principal (hero) --> 
+
+        <section id="inicio"> 
+
+            <h2>O que você quer fazer hoje?</h2> 
+
+            <p> 
+
+                Descubra gastronomia, experiências e serviços incríveis 
+
+                perto de você. O Oportuni conecta você às melhores 
+
+                oportunidades de Porto Alegre. 
+
+            </p> 
+
+            <img src="img/city.png" alt="Cidade cheia de oportunidades perto de você" width="600"> 
+
+            <a href="#categorias">Explorar oportunidades</a> 
+
+        </section> 
+
+ 
+ 
+
+        <!-- Seção 2: como funcuiona --> 
+
+        <section id="como-funciona"> 
+
+            <h2>Como funciona</h2> 
+
+            <ol> 
+
+                <li>Escolha o que você quer fazer hoje</li> 
+
+                <li>Descubra oportunidades perto de você</li> 
+
+                <li>Aproveite e economize</li> 
+
+            </ol> 
+
+        </section> 
+
+ 
+ 
+
+        <!-- Seção 3: categorias --> 
+
+        <section id="categorias"> 
+
+            <!-- cards de categoria --> 
+
+            <h2>Categorias</h2> 
+
+ 
+ 
+
+            <article> 
+
+                <h3>🍽️ Gastronomia</h3> 
+
+                <figure> 
+
+                    <img src="img/plate.png" alt="Prato de comida deliciosa" width="200"> 
+
+                    <figcaption>🍽️ Gastronomia</figcaption> 
+
+                </figure> 
+
+                <p>Restaurantes, bares e cafés com as melhores ofertas.</p> 
+
+            </article> 
+
+ 
+ 
+
+            <article> 
+
+                <h3>🎭 Experiências</h3> 
+
+                <figure> 
+
+                    <img src="img/ticket.png" alt="Pessoas curtindo um show" width="200"> 
+
+                    <figcaption>🎭 Experiências</figcaption> 
+
+                </figure> 
+
+                <p>Eventos, shows, passeios e atividades culturais.</p> 
+
+            </article> 
+
+ 
+ 
+
+            <article> 
+
+                <h3>💆 Serviços</h3> 
+
+                <figure> 
+
+                    <img src="img/heart.png" alt="Pessoa recebendo massagem" width="200"> 
+
+                    <figcaption>💆 Serviços</figcaption> 
+
+                </figure> 
+
+                <p>Beleza, bem-estar e serviços perto de você.</p> 
+
+            </article> 
+
+        </section> 
+
+ 
+ 
+
+        <!-- Seção 4: depoimentos --> 
+
+        <section id="depoimentos"> 
+
+            <!-- avaliações --> 
+
+            <h2>O que dizem sobre o Oportuni</h2> 
+
+ 
+ 
+
+            <article> 
+
+                <blockquote> 
+
+                    Descobri um restaurante incrível a duas quadras de casa 
+
+                    que eu nem sabia que existia. O Oportuni mudou minha rotina! 
+
+                </blockquote> 
+
+                <p>— Ana Paula, Porto Alegre</p> 
+
+            </article> 
+
+ 
+ 
+
+            <article> 
+
+                <blockquote> 
+
+                    <strong>Como dono de um pequeno negócio, o Oportuni me trouxe 
+
+                    clientes nos horários que antes ficavam vazios.</strong> 
+
+                </blockquote> 
+
+                <p>— Bruno, parceiro Oportuni</p> 
+
+            </article>         
+
+        </section> 
+
+ 
+ 
+
+        <section id="contato"> 
+
+            <h2>Quer fazer parte do Oportuni?</h2> 
+
+            <p>Deixsa seu contato e a gente retorna com as melhores oprtunidades.</p> 
+
+             
+
+            <form action="#" method="post"> 
+
+                <label for="nome">Nome Completo</label> 
+
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> 
+
+                 
+
+                <label for="email">E-mail</label> 
+
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required> 
+
+ 
+ 
+
+                <label for="celular">Celular</label> 
+
+                <input type="tel" id="celular" name="celular" placeholder="Digite seu celular" required> 
+
+ 
+ 
+
+                <label for="cidade">Cidade</label> 
+
+                <input type="text" id="cidade" name="cidade" value="Porto Alegre" readonly> 
+
+ 
+ 
+
+                <label for="interesse">O que te interessa?</label> 
+
+                <select id="interesse" name="interesse" required> 
+
+                    <option value="">Selecione</option> 
+
+                    <option value="gastronomia">🍽️ Gastronomia</option> 
+
+                    <option value="experiencias">🎭 Experiências</option> 
+
+                    <option value="servicos">💆 Serviços</option> 
+
+                    <option value="parceria">🤝 Parceria</option> 
+
+                </select> 
+
+ 
+ 
+
+                <p>Você é:</p> 
+
+                <input type="radio" id="usuário" name="tipo" value="usuário" checked> 
+
+                <label for="usuário">Usuário</label> 
+
+ 
+ 
+
+                <input type="radio" id="empresa" name="tipo" value="empresa"> 
+
+                <label for="empresa">Empresa</label> 
+
+ 
+ 
+
+                <br> 
+
+ 
+ 
+
+                <input type="checkbox" id="aceite" name="aceite" required> 
+
+                <label for="aceite">Aceito receber novidades e ofertas do Oportuni.</label> 
+
+ 
+ 
+
+                <label for="mensagem">Mensagem</label> 
+
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4"></textarea> 
+
+ 
+ 
+
+                <button type="submit">Enviar</button> 
+
+            </form> 
+
+ 
+ 
+
+        </section> 
+
+    </main> 
+
+    <!-- RODAPÉ --> 
+
+    <footer id="contato"> 
+
+        <!-- contato e direitos --> 
+
+        <h2>Fale com a gente</h2> 
+
+        <p>Contato: contato@oportuni.com.br</p> 
+
+        <p>Porto Alegre, RS</p> 
+
+        <h3>Redes sociais</h3> 
+
+        <ul> 
+
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li> 
+
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li> 
+
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li> 
+
+        </ul> 
+
+        <hr> 
+
+        <p>&copy; 2026 Oportuni. Todos os direitos reservados.</p>          
+
+    </footer> 
+
+</body> 
+
+ 
+ 
+
+</html> 
+
+ 
