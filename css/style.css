@@ -15,6 +15,17 @@ body {
     background-color: #f4f4f4;
 
     color: #172a45;
+    
+    
+    color: red;                    /* nome (limitado) */
+
+    color: #ff0000;                /* hexadecimal (o mais usado) */
+    
+    color: rgb(255, 000, 000);       /* vermelho, verde, azul */
+    
+    /*color: rgba(255, 137, 4, 0.5); /* com transparência (0 a 1) */
+    
+    
 
     line-height: 1.6;
 
@@ -51,5 +62,19 @@ nav a {
 nav a:hover {
 
     color: #ff8904;          /* muda para laranja ao passar o mouse */
+
+}
+
+article {
+
+    padding: 20px;
+
+    background-color: white;
+
+    margin: 20px auto;
+
+    max-width: 800px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
