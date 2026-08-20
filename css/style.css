@@ -12,20 +12,7 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #f4f4f4;
-
     color: #172a45;
-    
-    
-    color: red;                    /* nome (limitado) */
-
-    color: #ff0000;                /* hexadecimal (o mais usado) */
-    
-    color: rgb(255, 000, 000);       /* vermelho, verde, azul */
-    
-    /*color: rgba(255, 137, 4, 0.5); /* com transparência (0 a 1) */
-    
-    
 
     line-height: 1.6;
 
@@ -34,26 +21,37 @@ body {
 /* ============ CABEÇALHO ============ */
 
 header {
-
-    background-color:  grey;
-
-    color: white;
-
-    padding: 20px;
-
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 24px;
+}
+#hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    border-radius: 25px; /* Adiciona cantos arredondados à imagem */
+    padding:  20px;
 }
 
 /* Links da navegação */
+nav {
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px; 
+    flex-wrap: wrap;
+}
 
 nav a {
 
-    color: white;
+    color: black;
 
     text-decoration: none;   /* remove o sublinhado */
-
-    margin: 0 12px;
 
     font-weight: bold;
 
@@ -65,7 +63,67 @@ nav a:hover {
 
 }
 
-article {
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#inicio {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background-color: #f0f0f0;
+
+}
+
+#categorias {
+
+    display: flex;
+
+    flex-wrap: wrap;        /* permite que os artigos quebrem para a próxima linha */
+
+    gap: 20px;              /* espaço entre os artigos */
+
+    justify-content: center; /* centraliza os artigos horizontalmente */
+
+    padding: 20px;
+
+}
+
+#categorias article {
+
+    flex: 1;              /* divide o espaço igualmente */
+
+    min-width: 250px;     /* não encolhe além disso */
+
+    max-width: 320px; /* não cresce além disso */
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra sutil */
+
+    text-align: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+/*article {
 
     padding: 20px;
 
