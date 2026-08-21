@@ -114,28 +114,40 @@ main {
 }
 
 
+/* Estilo para a seção de depoimentos */
 #depoimentos {
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 24px;
-
-    flex-wrap: wrap;
-
+    background-color: #f9f9f9; /* Fundo suave para destacar a seção */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/*article {
+#depoimentos h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
 
-    padding: 20px;
+#depoimentos article {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
 
-    background-color: white;
+#depoimentos blockquote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto 10px;
+    color: #444;
+    border-left: 4px solid #007BFF; /* Destaque para o bloco de citação */
+    padding-left: 15px;
+}
 
-    margin: 20px auto;
-
-    max-width: 800px;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+#depoimentos p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
 }
