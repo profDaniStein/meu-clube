@@ -40,55 +40,35 @@ nav {
 }
 
 nav a {
-
     color: #172a45;
-
     text-decoration: none;   /* remove o sublinhado */
-
     font-weight: bold;
-
 }
 
 nav a:hover {
-
     color: #ff8904;          /* muda para laranja ao passar o mouse */
-
 }
 
 main {
     display: flex;
     flex-direction: column;
-
 }
 
 #inicio {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
-
     padding: 40px 20px;
-
     background-color: #f0f0f0;
-
 }
 
 #categorias {
-
     display: flex;
-
     flex-wrap: wrap;        /* permite que os artigos quebrem para a próxima linha */
-
     gap: 20px;              /* espaço entre os artigos */
-
     justify-content: center; /* centraliza os artigos horizontalmente */
-
     padding: 20px;
-
 }
 
 #categorias article {
@@ -111,33 +91,136 @@ main {
     text-align: center;
     border-radius: 8px; /* Cantos arredondados */
     margin: 20px auto;  /* Centraliza a seção horizontalmente*/
-    max-width: 800px;
+    max-width: 800px;/* Limita a largura máxima da seção */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
 }
 
 #depoimentos h2 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2rem; /* Tamanho da fonte maior para o título */
+    color: #172a45;
     margin-bottom: 20px;
 }
 
 #depoimentos article {
     margin-top: 20px;
     font-style: italic;
-    color: #555;
+    color: #172a45;
 }
 
 #depoimentos blockquote {
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0 auto 10px;
-    color: #444;
+    color: #172a45;
     border-left: 4px solid #007BFF; /* Destaque para o bloco de citação */
     padding-left: 15px;
 }
 
 #depoimentos p {
     font-size: 1rem;
-    color: #666;
+    color:#172a45;
     margin-top: 5px;
+}
+
+/* Estilo para o formulário de contato */
+#contato {
+    background-color: #f9f9f9; /* Fundo suave */
+    padding: 30px;
+    border-radius: 8px; /* Cantos arredondados */
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    font-family: Arial, sans-serif;
+}
+
+#contato h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contato label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Alinhamento dos botões de rádio e seus rótulos */
+#contato input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px; /* Espaço entre o botão e o rótulo */
+}
+
+#contato label[for="usuário"],
+#contato label[for="empresa"] {
+    display: inline-block;
+    margin-right: 15px; /* Espaço entre os grupos de rádio */
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo para o campo de celular */
+#contato input[type="tel"] {
+    width: 100%; /* Ajusta o campo para ocupar toda a largura disponível */
+    padding: 10px; /* Adiciona espaçamento interno */
+    font-size: 1rem; /* Aumenta o tamanho da fonte */
+    border: 1px solid #ccc; /* Define uma borda padrão */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Adiciona um estilo de foco para o campo */
+#contato input[type="tel"]:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona um brilho ao focar */
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato input[type="radio"],
+#contato input[type="checkbox"],
+#contato textarea,
+#contato select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contato input[type="radio"],
+#contato input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+#contato textarea {
+    resize: none;
+}
+
+#contato button[type="submit"] {
+    background-color: #007BFF; /* Cor de destaque */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+#contato p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
 }
