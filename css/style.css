@@ -92,37 +92,27 @@ main {
 }
 
 #categorias article {
-
     flex: 1;              /* divide o espaço igualmente */
-
     min-width: 250px;     /* não encolhe além disso */
-
     max-width: 320px; /* não cresce além disso */
-
     background-color: white;
-
     border-radius: 8px;
-
     padding: 20px;
-
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra sutil */
-
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3); /* sombra sutil */
     text-align: center;
-
     flex-wrap: wrap;
-
 }
 
 
 /* Estilo para a seção de depoimentos */
 #depoimentos {
-    background-color: #f9f9f9; /* Fundo suave para destacar a seção */
-    padding: 40px 20px;
+    background-color: #d4bb9e; /* Fundo suave para destacar a seção */
+    padding: 40px 20px; /* Espaçamento interno */
     text-align: center;
-    border-radius: 8px;
-    margin: 20px auto;
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 20px auto;  /* Centraliza a seção horizontalmente*/
     max-width: 800px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
 }
 
 #depoimentos h2 {
