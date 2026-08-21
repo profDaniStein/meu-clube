@@ -1,21 +1,13 @@
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;  /* padding não aumenta o tamanho total */
-
 }
 
 body {
-
     font-family: Arial, Helvetica, sans-serif;
-
     color: #172a45;
-
-    line-height: 1.6;
-
+    line-height: 1.6; /* espaçamento entre linhas */
 }
 
 /* ============ CABEÇALHO ============ */
@@ -26,7 +18,7 @@ header {
     align-items: center;
     gap: 12px;
     background-color: #f0f0f0;
-    color: black;
+    color: #172a45;
     padding: 24px;
 }
 #hero-image {
@@ -49,7 +41,7 @@ nav {
 
 nav a {
 
-    color: black;
+    color: #172a45;
 
     text-decoration: none;   /* remove o sublinhado */
 
@@ -122,6 +114,17 @@ main {
 }
 
 
+#depoimentos {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    flex-wrap: wrap;
+
+}
 
 /*article {
 
