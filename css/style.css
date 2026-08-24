@@ -65,12 +65,13 @@ main {
 
 #categorias {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* três colunas de largura igual */
+    grid-template-columns: repeat(4, 1fr); /* três colunas de largura igual */
+    grid-template-areas:
 
-    /*flex-wrap: wrap;        /* permite que os artigos quebrem para a próxima linha */
-    gap: 24px;              /* espaço entre os artigos */
-    justify-content: center; /* centraliza os artigos horizontalmente */
-    padding: 20px;
+    grid-auto-rows: minmax(40px, auto);   /* no mínimo 180px, cresce se o conteúdo pedir */
+    gap: 24px;                          /* espaço entre linhas E colunas */
+    row-gap: 32px;                      /* só entre linhas */
+    column-gap: 16px;                   /* só entre colunas */
 }
 
 #categorias article {
