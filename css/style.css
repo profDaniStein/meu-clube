@@ -64,9 +64,11 @@ main {
 }
 
 #categorias {
-    display: flex;
-    flex-wrap: wrap;        /* permite que os artigos quebrem para a próxima linha */
-    gap: 20px;              /* espaço entre os artigos */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* três colunas de largura igual */
+
+    /*flex-wrap: wrap;        /* permite que os artigos quebrem para a próxima linha */
+    gap: 24px;              /* espaço entre os artigos */
     justify-content: center; /* centraliza os artigos horizontalmente */
     padding: 20px;
 }
