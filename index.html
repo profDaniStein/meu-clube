@@ -1,275 +1,211 @@
-<!DOCTYPE html> 
 
-<html lang="pt-BR"> 
 
-<head> 
-
+Index · HTML
+<!DOCTYPE html>
+<!-- ============================================================
+     OPORTUNI — landing page do curso
+     UC15 · Técnico em Informática · Senac-RS
+     Estado: consolidado até o Encontro 7 (CSS Grid)
+     ============================================================ -->
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Oportuni — as melhores oportunidades perto de você</title>
+ 
+    <!-- Favicon: o ícone que aparece na aba do navegador -->
+    <link rel="icon" href="imagens/oportuni-icone.png" type="image/png">
+ 
+    <!-- CSS EXTERNO: um arquivo, todas as páginas.
+         Se o caminho estiver errado, a página abre "pelada". -->
     <link rel="stylesheet" href="css/style.css">
-
-    <meta charset="UTF-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    <title>Oportuni — As melhores oportunidades perto de você</title> 
-
-</head> 
-
-<body> 
-
-    <!-- CABEÇALHO: logo + navegação --> 
-
-    <header> 
-
-        <img src="img/logo.png" alt="Logo do Oportuni" width="200"> 
-
-        <p>As melhores oportunidades perto de você</p> 
-
-        <nav> 
-
-            <!-- menu vai aqui --> 
-
-            <a href="#inicio">Início</a> 
-
-            <a href="#como-funciona">Como funciona</a> 
-
-            <a href="#categorias">Categorias</a> 
-
-            <a href="#depoimentos">Depoimentos</a> 
-
-            <a href="#contato">Contato</a> 
-
-     
-
-        </nav> 
-
-    </header> 
-
-        <!-- CONTEÚDO PRINCIPAL --> 
-
-    <main> 
-
-        <!-- Seção 1: chamada principal (hero) --> 
-
-        <section id="inicio"> 
-
-            <h2>O que você quer fazer hoje?</h2> 
-
-            <p> 
-
-                Descubra gastronomia, experiências e serviços incríveis 
-
-                perto de você. <br> O Oportuni conecta você às melhores 
-
-                oportunidades de Porto Alegre. 
-
-            </p> 
-            <figure id="hero-image">
-                <img src="img/city.png" alt="Cidade cheia de oportunidades perto de você" width="600"> 
-                <figcaption>
-                    <a href="#categorias">Explorar oportunidades</a>
-                </figcaption> 
-            </figure>       
-        </section> 
-
+</head>
  
+<body>
  
-
-        <!-- Seção 2: como funcuiona --> 
-
-        <section id="como-funciona"> 
-
-            <h2>Como funciona</h2> 
-
-            <ol> 
-
-                <li>Escolha o que você quer fazer hoje</li> 
-
-                <li>Descubra oportunidades perto de você</li> 
-
-                <li>Aproveite e economize</li> 
-
-            </ol> 
-
-        </section> 
-
+    <!-- ============ CABEÇALHO ============
+         header = topo do documento. Aqui moram a marca e a navegação. -->
+    <header>
+        <img src="imagens/logo-dark.png" alt="Logotipo da Oportuni" class="logo">
  
+        <!-- nav = bloco de navegação. Semântico: leitores de tela
+             anunciam "navegação" e o usuário pode pular direto pra cá. -->
+        <nav>
+            <a href="#categorias">Categorias</a>
+            <a href="#galeria">Oportunidades</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
  
-
-        <!-- Seção 3: categorias --> 
-        <h2>Categorias</h2>
-        <section id="categorias"> 
-            <!-- cards de categoria -->       
-            <article> 
-                <h3>🍽️ Gastronomia</h3> 
-                <figure> 
-                    <img src="img/plate.png" alt="Prato de comida deliciosa" width="200"> 
-                    <figcaption>🍽️ Gastronomia</figcaption> 
-                </figure> 
-                <p>Restaurantes, bares e cafés com as melhores ofertas.</p> 
-            </article> 
-
-            <article> 
-                <h3>🎭 Experiências</h3> 
-                <figure> 
-                    <img src="img/ticket.png" alt="Pessoas curtindo um show" width="200"> 
-                    <figcaption>🎭 Experiências</figcaption> 
-                </figure> 
-                <p>Eventos, shows, passeios e atividades culturais.</p> 
-            </article> 
-
-            <article> 
-                <h3>💆 Serviços</h3> 
-                <figure> 
-                    <img src="img/heart.png" alt="Pessoa recebendo massagem" width="200"> 
-                    <figcaption>💆 Serviços</figcaption> 
-                </figure> 
-                <p>Beleza, bem-estar e serviços perto de você.</p> 
-            </article> 
-
-        <article> 
-            <h3>🍽️ Gastronomia</h3> 
-            <figure> 
-                <img src="img/plate.png" alt="Prato de comida deliciosa" width="200"> 
-                <figcaption>🍽️ Gastronomia</figcaption> 
-            </figure> 
-            <p>Restaurantes, bares e cafés com as melhores ofertas.</p> 
-        </article> 
-
-        <article> 
-            <h3>🎭 Experiências</h3> 
-            <figure> 
-                <img src="img/ticket.png" alt="Pessoas curtindo um show" width="200"> 
-                <figcaption>🎭 Experiências</figcaption> 
-            </figure> 
-            <p>Eventos, shows, passeios e atividades culturais.</p> 
-        </article> 
-
-        <article> 
-            <h3>🍽️ Gastronomia</h3> 
-            <figure> 
-                <img src="img/plate.png" alt="Prato de comida deliciosa" width="200"> 
-                <figcaption>🍽️ Gastronomia</figcaption> 
-            </figure> 
-            <p>Restaurantes, bares e cafés com as melhores ofertas.</p> 
-        </article> 
-
-        <article> 
-            <h3>🎭 Experiências</h3> 
-            <figure> 
-                <img src="img/ticket.png" alt="Pessoas curtindo um show" width="200"> 
-                <figcaption>🎭 Experiências</figcaption> 
-            </figure> 
-            <p>Eventos, shows, passeios e atividades culturais.</p> 
-        </article> 
-        
-    </section> 
-
+    <!-- ============ CONTEÚDO PRINCIPAL ============
+         main = o conteúdo único desta página. Só um por documento. -->
+    <main>
  
-
-        <!-- Seção 4: depoimentos --> 
-
-        <section id="depoimentos"> 
-            <!-- avaliações --> 
-            <h2>O que dizem sobre o Oportuni</h2> 
-            <article> 
-                <blockquote> 
-                    <strong>Descobri um restaurante incrível a duas quadras de casa 
-                    que eu nem sabia que existia. O Oportuni mudou minha rotina!</strong>
-                </blockquote> 
-                <p>— Ana Paula, Porto Alegre</p> 
-            </article> 
+        <!-- ---------- HERO: a primeira dobra ---------- -->
+        <section id="hero">
+            <h1>As melhores oportunidades perto de você</h1>
+            <p class="subtitulo">O que você quer fazer hoje?</p>
  
-            <article> 
-                <blockquote> 
-                    <strong>Como dono de um pequeno negócio, o Oportuni me trouxe 
-                    clientes nos horários que antes ficavam vazios.</strong> 
-                </blockquote> 
-                <p>— Bruno, parceiro Oportuni</p> 
-            </article>         
-        </section> 
-
-        <section id="contato"> 
-            <h2>Quer fazer parte do Oportuni?</h2> 
-            <p>Deixsa seu contato e a gente retorna com as melhores oprtunidades.</p> 
-
-            <form action="#" method="post"> 
-                <label for="nome">Nome Completo</label> 
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> 
-                
-                <label for="email">E-mail</label> 
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required> 
-
-                <label for="celular">Celular</label> 
-                <input type="tel" id="celular" name="celular" placeholder="Digite seu celular" required> 
-
-                <label for="cidade">Cidade</label> 
-                <input type="text" id="cidade" name="cidade" value="Porto Alegre" readonly> 
-
-                <label for="interesse">O que te interessa?</label> 
-
-                <select id="interesse" name="interesse" required> 
-                    <option value="">Selecione</option> 
-                    <option value="gastronomia">🍽️ Gastronomia</option> 
-                    <option value="experiencias">🎭 Experiências</option> 
-                    <option value="servicos">💆 Serviços</option> 
-                    <option value="parceria">🤝 Parceria</option> 
-                </select> 
-
-                <p>Você é:</p> 
-                <input type="radio" id="usuário" name="tipo" value="usuário" checked> 
-                <label for="usuário">Usuário</label> 
-
-                <input type="radio" id="empresa" name="tipo" value="empresa"> 
-                <label for="empresa">Empresa</label> 
-
-                
-                <label for="aceite">Aceito receber novidades e ofertas do Oportuni.</label> 
-                <input type="checkbox" id="aceite" name="aceite" required> 
-                
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4"></textarea> 
-
-                <button type="submit">Enviar</button> 
-            </form> 
-        </section> 
-
-    </main> 
-
-    <!-- RODAPÉ --> 
-
-    <footer> 
-
-        <!-- contato e direitos --> 
-
-        <h2>Fale com a gente</h2> 
-
-        <p>Contato: contato@oportuni.com.br</p> 
-
-        <p>Porto Alegre, RS</p> 
-
-        <h3>Redes sociais</h3> 
-
-        <ul> 
-
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li> 
-
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li> 
-
-            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li> 
-
-        </ul> 
-
-        <hr> 
-
-        <p>&copy; 2026 Oportuni. Todos os direitos reservados.</p>          
-
-    </footer> 
-
-</body> 
-
+            <!-- Link estilizado como botão. O href="#categorias" leva
+                 para a âncora id="categorias" logo abaixo. -->
+            <a href="#categorias" class="botao">Descobrir agora</a>
  
+            <img src="imagens/hero.png" alt="Ilustração da cidade com marcadores de oportunidades">
+        </section>
  
-
-</html> 
-
+        <!-- ---------- CATEGORIAS: três cards em FLEXBOX (Enc. 6) ---------- -->
+        <section id="categorias">
+            <h2>Explore por categoria</h2>
+ 
+            <!-- article = conteúdo que faz sentido sozinho, fora da página.
+                 Por isso cada card é um article, não uma div. -->
+            <article>
+                <img src="imagens/gastronomia.png" alt="Prato servido em restaurante">
+                <h3>Gastronomia</h3>
+                <p>Restaurantes, cafés e bares com condições especiais no seu bairro.</p>
+            </article>
+ 
+            <article>
+                <img src="imagens/experiencias.png" alt="Grupo de pessoas em atividade ao ar livre">
+                <h3>Experiências</h3>
+                <p>Passeios, cursos, shows e trilhas para preencher a agenda.</p>
+            </article>
+ 
+            <article>
+                <img src="imagens/servicos.png" alt="Profissional atendendo cliente">
+                <h3>Serviços</h3>
+                <p>Beleza, saúde e manutenção com quem atende perto de casa.</p>
+            </article>
+        </section>
+ 
+        <!-- ---------- GALERIA: seis cards em GRID (Enc. 7) ----------
+             Seção NOVA deste encontro. Seis itens porque três não formam
+             grade de verdade — precisamos de duas linhas para ver o Grid
+             alinhando na vertical, coisa que o Flexbox não faz. -->
+        <section id="galeria">
+            <h2>Oportunidades da semana</h2>
+ 
+            <!-- Este div é o GRID CONTAINER. Os articles são os grid items. -->
+            <div class="grade-galeria">
+ 
+                <!-- .destaque ocupa duas colunas via grid-column: span 2 -->
+                <article class="card-op destaque">
+                    <h3>Rodízio de pizza no Bom Fim</h3>
+                    <p>Terça e quarta, 30% off para quem reservar pelo app.</p>
+                    <span class="etiqueta">Destaque</span>
+                </article>
+ 
+                <article class="card-op">
+                    <h3>Trilha guiada na Lomba</h3>
+                    <p>Sábado de manhã, saída às 7h.</p>
+                </article>
+ 
+                <article class="card-op">
+                    <h3>Corte + barba na Cidade Baixa</h3>
+                    <p>Agende online e pague menos.</p>
+                </article>
+ 
+                <article class="card-op">
+                    <h3>Feira de vinis no Centro</h3>
+                    <p>Domingo, entrada gratuita.</p>
+                </article>
+ 
+                <article class="card-op">
+                    <h3>Aula aberta de dança</h3>
+                    <p>Quinta à noite, sem custo.</p>
+                </article>
+ 
+                <article class="card-op">
+                    <h3>Café especial na Redenção</h3>
+                    <p>Segunda a sexta, combo por R$ 18.</p>
+                </article>
+ 
+            </div>
+        </section>
+ 
+        <!-- ---------- DEPOIMENTOS: FLEXBOX (Enc. 6) ---------- -->
+        <section id="depoimentos">
+            <h2>Quem já usou</h2>
+ 
+            <article>
+                <!-- blockquote = citação em bloco. Semântico, não decorativo. -->
+                <blockquote>
+                    Achei um café ótimo a três quadras de casa que eu nem sabia que existia.
+                </blockquote>
+                <p class="autor">— Marina, Cidade Baixa</p>
+            </article>
+ 
+            <article>
+                <blockquote>
+                    Uso toda semana para escolher o que fazer no fim de semana.
+                </blockquote>
+                <p class="autor">— Rafael, Bom Fim</p>
+            </article>
+        </section>
+ 
+        <!-- ---------- CONTATO: formulário ---------- -->
+        <section id="contato">
+            <h2>Receba as oportunidades da semana</h2>
+ 
+            <form>
+                <!-- label + for/id: clicar no texto foca o campo.
+                     Acessibilidade real, não enfeite. -->
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+ 
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+ 
+                <label for="bairro">Bairro de interesse</label>
+                <select id="bairro" name="bairro">
+                    <option value="centro">Centro Histórico</option>
+                    <option value="bomfim">Bom Fim</option>
+                    <option value="cidadebaixa">Cidade Baixa</option>
+                    <option value="moinhos">Moinhos de Vento</option>
+                </select>
+ 
+                <label for="mensagem">Que tipo de oportunidade você procura?</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+ 
+                <button type="submit">Quero receber</button>
+            </form>
+        </section>
+ 
+    </main>
+ 
+    <!-- ============ RODAPÉ: GRID em colunas (Enc. 7) ============ -->
+    <footer>
+        <div class="col-rodape">
+            <h4>Oportuni</h4>
+            <p>As melhores oportunidades perto de você.</p>
+        </div>
+ 
+        <div class="col-rodape">
+            <h4>Navegação</h4>
+            <ul class="links-rodape">
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#galeria">Oportunidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+ 
+        <div class="col-rodape">
+            <h4>Redes sociais</h4>
+            <!-- Esta ul vira FLEXBOX (horizontal) dentro de uma coluna do GRID.
+                 É o exemplo vivo das duas ferramentas convivendo. -->
+            <ul class="redes">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+ 
+        <p class="creditos">© 2026 Oportuni — projeto acadêmico · Senac-RS</p>
+    </footer>
+ 
+</body>
+</html>
  
