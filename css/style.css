@@ -38,12 +38,15 @@ img {
     height: auto;
 }
 
+.hero-img{
+    min-width: 500px;
+}
 
 /* ============ CABEÇALHO ============
    [E5] cor e padding · [E6] flex para empilhar logo e menu com controle */
 header {
-    background-color: #1a5fb4;
-    color: white;
+    background-color: white;
+    color: #172a45;
 
     /* [E6] FLEXBOX em coluna: logo em cima, menu embaixo, tudo centrado */
     display: flex;
@@ -66,7 +69,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #172a45;
     text-decoration: none;   /* [E5] remove o sublinhado */
     font-weight: bold;
 }
