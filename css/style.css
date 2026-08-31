@@ -26,7 +26,8 @@
 
 /* ============ [E5] CORPO ============ */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Starjedi', Arial, Helvetica, sans-serif;
+    src: url('./fonts/Starjedi.ttf')
     background-color: #f4f4f4;
     color: #172a45;
     line-height: 1.6;
@@ -107,6 +108,59 @@ h2 {
     font-size: 1.2rem;
     color: #1a5fb4;
     margin-bottom: 24px;
+}
+
+/* Estilo para a seção hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    background-color: #172a45; /* Cor de fundo para destaque */
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Estilo para a imagem dentro da seção hero */
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    margin-top: 1rem;
+}
+
+/* Estilo para o texto dentro da seção hero */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Starjedi', Arial, Helvetica, sans-serif; /* Usando a fonte Starjedi */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-img {
+        margin-left: 2rem;
+    }
 }
 
 /* [E5] Link com cara de botão */
@@ -336,3 +390,94 @@ footer a:hover {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 16px;
 }
+
+/* Tipografia fluida */
+#hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.subtitulo {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+/* Padding menor: 20px de cada lado comem muito de uma tela de 375px */
+section {
+    padding: 32px 16px;
+}
+
+/* Categorias empilhadas por padrão */
+#categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* O card destaque NÃO estica no celular:
+   pedir "span 2" numa grade de UMA coluna é um pedido impossível 
+.destaque {
+    grid-column: auto;
+}*/
+
+/* Menu compacto */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: 'Starjedi';
+    src: url('./fonts/Starjedi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ============ [E5] CORPO ============ */
+body {
+    font-family: 'Starjedi', Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #172a45;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Categorias voltam para a linha */
+    #categorias {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Agora sim o destaque ocupa duas colunas */
+    .destaque {
+        grid-column: span 2;
+    }
+
+    nav {
+        gap: 24px;
+        font-size: 1rem;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+@media (min-width: 1440px) {
+    section {
+        max-width: 1200px;
+    }
+}
+
