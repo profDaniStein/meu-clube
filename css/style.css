@@ -177,7 +177,7 @@ button {
 
 .botao:hover,
 button:hover {
-    background-color: #e07800;
+    background-color: #0068e0;
 }
 
 
@@ -417,6 +417,58 @@ section {
     grid-column: auto;
 }*/
 
+* Estilo do botão hambúrguer */
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Menu oculto por padrão */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #172a45;
+    padding: 1rem;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu visível */
+.menu.show {
+    display: flex;
+}
+
+/* Estilo dos links do menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0.5rem 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
 /* Menu compacto */
 nav {
     display: flex;
@@ -426,17 +478,28 @@ nav {
     font-size: 0.95rem;
 }
 
+/* ===== A PARTIR DE 768px ===== */
+@media (min-width: 768px) {
+
+    /* No desktop não existe hambúrguer */
+    .btn-menu {
+        display: none;
+    }
+
+    /* E o menu está sempre visível, em linha */
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        width: auto;
+    }
+}
+
 footer {
     text-align: center;
 }
 
 
-@font-face {
-    font-family: 'Starjedi';
-    src: url('./fonts/Starjedi.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* ============ [E5] CORPO ============ */
 body {
