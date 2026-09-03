@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nome": "João Silva",
+        "email": "joao@email.com",
+        "telefone": "123456789",
+        "dataCadastro": "2023-10-01T12:00:00Z"
+    },
+    {
+        "id": 2,
+        "nome": "Maria Oliveira",
+        "email": "maria@email.com",
+        "telefone": "987654321",
+        "dataCadastro": "2023-10-02T12:00:00Z"
+    }
+]
